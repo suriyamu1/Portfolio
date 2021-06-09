@@ -1,53 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <title>Certifications</title>
-        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Suriya Mu-Portfolio</title>
     </head>
+    <body>
+        <header>
+            <img class="logo" src="resume.png" alt="" width="50px" height="50px">
+            <nav>
+                <!--The nav element defines a set of navigation links-->
+                <ul class="nav_links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cta"><button>Contact</button></a>
+        </header>
 
-    <body>    
-        <section class="certifications">
-            <div class="heading">
-                <h2>Certifications</h2>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                1500s, when an unknown printer took a gallery of type and scrambled it to make
-                a type specimen book.</p>
-            </div>
-            <div class="content">
-                <div class="box">
-                    <!-- <img src="icon1.png" alt=""> -->
-                    <h2>Python</h2>
-                    <ul>
-                        <li><span>1</span><a href="https://www.hackerrank.com/certificates/da92947ab537" target="_blank">Python Basic</a>  HackerRank</li>
-                        <li><span>2</span><a href="https://coursera.org/share/3ef5e45e5425692fcd9d06e974b836da" target="_blank">Python Basics</a>  Coursera</li>
-                        <li><span>3</span><a href="https://coursera.org/share/cd94e41134a4419c9636c7aa27e2f066" target="_blank">Py Files & Dictionaries</a>  Coursera</li>
-                        <li><span>4</span><a href="#">List Item four</a></li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <!-- <img src="icon1.png" alt=""> -->
-                    <h2>MATLAB</h2>
-                    <ul>
-                        <li><span>1</span><a href="#" target="_blank">Introduction to MATLAB</a> Coursera</li>
-                        <li><span>2</span><a href="#" target="_blank">MATLAB Fundamentals</a>  MathWorks</li>
-                        <li><span>3</span><a href="#" target="_blank">Image Processing</a>  MathWorks</li>
-                        <li><span>4</span><a href="#">Simulink Onramp</a>  MathWorks</li>
-
-                    </ul>
-                </div>
-                <div class="box">
-                    <!-- <img src="icon3.png" alt=""> -->
-                    <h2>MS EXCEL</h2>
-                    <ul>
-                        <li><span>1</span>List Item one</li>
-                        <li><span>2</span>List Item two</li>
-                        <li><span>3</span>List Item three</li>
-                        <li><span>4</span>List Item four</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
     </body>
+
+    <section class="intro">
+
+        <div class="video">
+
+            <video src="CodingVideo.mp4" muted loop autoplay></video> 
+            <!-- These attributes are important -->
+
+            <div class="overlay"></div>
+            <!--To apply color filter to the video-->
+        </div>
+
+        <div class="text">
+            <h3>Hello !! I am</h3>
+            <h2>Suriya Murugesan</h2>
+            <p>Welcome to my portfolio website!<br>I am a second year student pursuing B.E. EEE in TCE and also I am a self-taught web developer.
+            My areas of interest are Digital electronics, Electrical Machines, web development, Control Engineering and Image processing.
+            I am skilled at Python programming, HTML, CSS, MATLAB, C, etc. 
+            I am very much passionate to learn, acquire new skills and also to apply my knowledge on real world problems.</p>
+
+            <a href="19E113PMassn.pdf" download="Suriya Resume">Download CV</a>
+            <!--To let your users download a file, copy the file to the website folder, put the filename in anchor tag and add 'download' attribute-->
+            <!--The downloaded file will have the name Suriya Resume-->
+        </div>
+
+
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/suriya-murugesan-profile" target="_blank"><img src="linkedin.png" alt="" width="50" height="50"></a></li>
+            <li><a href="#"><img src="github.png" alt="" width="50" height="50"></a></li>
+            <li><a href="https://www.hackerrank.com/suriyamu1" target="_blank"><img src="HackerRank.png" alt="" width="50" height="50"></a></li>
+        </ul>
+    </section>
+
+    <section class="skills">
+        <a name="Skills"></a>
+        <div class="heading">
+            <h2>My skills</h2>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled it to make
+            a type specimen book.</p>
+        </div>
+        <div class="content">
+            <div class="skillsBx">
+                <img src="py3_img.png" alt="">
+                <h2>Python</h2>
+                <p>Lorem Ipsum goppamaejf fwvsds vsd. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It
+                was popularised in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages</p>
+            </div>
+            <div class="skillsBx">
+                <img src="matlab_img.png" alt="">
+                <h2>MATLAB</h2>
+                <p>Lorem Ipsum goppamaejf fwvsds vsd. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It
+                was popularised in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages</p>
+            </div>
+            <div class="skillsBx">
+                <img src="C_img.png" alt="">
+                <h2>C</h2>
+                <p>Lorem Ipsum goppamaejf fwvsds vsd. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It
+                was popularised in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages</p>
+            </div>
+            <div class="skillsBx">
+                <img src="html_img.png" alt="">
+                <h2>HTML</h2>
+                <p>Lorem Ipsum goppamaejf fwvsds vsd. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It
+                was popularised in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages</p>
+            </div>
+            <div class="skillsBx">
+                <img src="css_img.png" alt="">
+                <h2>CSS</h2>
+                <p>Lorem Ipsum goppamaejf fwvsds vsd. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It
+                was popularised in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages</p>
+            </div>
+            <div class="skillsBx">
+                <img src="excel_img.png" alt="">
+                <h2>MS Excel</h2>
+                <p>Data analysis, data visualization, data management</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications">
+        <a name="certifications"></a>
+        <div class="heading">
+            <h2>Certifications</h2>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a gallery of type and scrambled it to make
+            a type specimen book.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <!-- <img src="icon1.png" alt=""> -->
+                <h2>Python</h2>
+                <ul>
+                    <li><span>1</span><a href="https://www.hackerrank.com/certificates/da92947ab537" target="_blank">Python Basic</a>  HackerRank</li>
+                    <li><span>2</span><a href="https://coursera.org/share/3ef5e45e5425692fcd9d06e974b836da" target="_blank">Python Basics</a>  Coursera</li>
+                    <li><span>3</span><a href="https://coursera.org/share/cd94e41134a4419c9636c7aa27e2f066" target="_blank">Py Files & Dictionaries</a>  Coursera</li>
+                </ul>
+            </div>
+            <div class="box">
+                <!-- <img src="icon1.png" alt=""> -->
+                <h2>MATLAB</h2>
+                <ul>
+                    <li><span>1</span><a href="#" target="_blank">Introduction to MATLAB</a> Coursera</li>
+                    <li><span>2</span><a href="#" target="_blank">MATLAB Onramp</a>  MathWorks</li>
+                    <li><span>3</span><a href="#" target="_blank">Simulink Onramp</a>  MathWorks</li>
+
+                </ul>
+            </div>
+            <div class="box">
+                <!-- <img src="icon3.png" alt=""> -->
+                <h2>MS EXCEL</h2>
+                <ul>
+                    <li><span>1</span><a href="#" target="_blank">Excel Essentials</a>  Coursera</li>
+                    <li><span>2</span><a href="#" target="_blank">Excel Intermediate-1</a>  Coursera</li>
+                    <li><span>3</span><a href="#" target="_blank">Excel Intermediate-2</a>  Coursera</li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
 </html>
