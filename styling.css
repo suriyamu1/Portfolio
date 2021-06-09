@@ -1,0 +1,115 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* border-box is to include the padding and border are included in the width and height */  
+}
+.certifications
+{
+    padding: 35px 75px 200px 75px;
+    background: rgb(27, 25, 25);
+}
+.certifications .heading
+{
+    color: rgb(255, 249, 249); /* Not working */
+    padding: 70px;
+}
+.certifications .heading h2
+{
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.certifications .content
+{
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin:0;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+}
+
+/* Online tutorials - List Style Hover Items Youtube video*/
+
+.certifications .content .box
+{
+    min-width: 370px;
+    border-bottom: 5px solid #03A9FF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0px;
+}
+.certifications .content .box h2
+{
+    color: #fff;
+    background: #03A9FF;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.certifications .content .box ul
+{
+    position: relative;
+    background: #fff;
+}
+.certifications .content .box ul li
+{
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.15);
+    transition: transform 0.3s;
+}
+.certifications .content .box ul:hover li
+{
+    opacity: 0.4;
+}
+.certifications .content .box ul li:hover
+{
+    transform: scale(1.07);
+    z-index: 100;
+    background: #25bcff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    color: #fff;
+    opacity: 1;
+    border-radius: 5px;
+}
+.certifications .content .box ul li span
+{
+    width: 20px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    background: #25bcff;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.certifications .content .box ul li:hover span
+{
+    background: #ffffff;
+    color: #25bcff;
+}
+
+.certifications .content .box ul a
+{
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 20px 5px 20px;
+    border-radius: 15px;
+    color: #000;
+    background-color: #25bcff;
+}
