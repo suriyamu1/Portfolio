@@ -13,7 +13,12 @@
 
 
 /* Navigation Bar on top (in header) */
-
+nav
+{
+    width: 100%;
+    text-align: center;
+    /* for bringing the content in nav bar to center */
+}
 nav li, nav a, nav button
 {
     /* Text styling for li, a, button */
@@ -26,60 +31,43 @@ nav li, nav a, nav button
 header
 {
     box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    z-index: 222;
     margin: 0px;
     padding: 0px;
-    background-color: #0e0d0d ; /*Colour should be as same as background color otherwise, the colour difference will be visible*/
+    background-color: #0033FF ; /*Colour should be as same as background color otherwise, the colour difference will be visible*/
     display: flex; /* A flex container expands items to fill available free space or shrinks them to prevent overflow. */
     justify-content: space-between;
     align-items: center;
     padding: 3px 15px; /* If the padding has two values, 1st one is for top and bottom, 2nd one for left and right */
 }
-
-.logo
-{
-    cursor: pointer;
-    /* The cursor will turn into hand when hovering over the logo img */
-}
-
 .nav_links
 {
-    list-style: none; 
+    list-style: none;
     
 }
-
 .nav_links li
 {
     display: inline-block;
     /* To list out the list elements in a same line */
     padding: 10px 25px; /* Top nd bottom: 10px, left & right: 25px*/
-}
-
-.nav_links li a
-{
-    transition: 1s;
+    align-items: center;
+    justify-content: space-between ;
 }
 .nav_links li a:hover
 {
-    color: #0088a9;
-    /* When hovering over the links in nav bar, it will turn blue */
+    color: #0000CC ;
+    border: 1px solid white;
+    padding: 3px 9px;
+    transition: 0.2s;
+    border-radius: 20px;
+    margin: 0;
+    background-color: white;
+    /* When hovering over the links in nav bar, it will turn black */
 }
 
-button
-{
-    padding: 5px 15px;
-    border: #000;
-    border: px;
-    border-radius: 25px;
-    background-color: rgb(13, 199, 245, 1);
-    cursor: pointer;
-    transition: 1.2s;
-}
 
-button:hover
-{
-    background-color: rgb(13, 199, 245, 0.8) ;
-    color: #080808;
-}
 
 /* Introduction section with video background */
 
@@ -92,7 +80,7 @@ button:hover
     display: flex;
     /* justify-content: left; */
     align-items: right;
-    background-color: rgb(146, 36, 36);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     z-index: 2;
 }
@@ -112,19 +100,20 @@ button:hover
     -moz-transform:rotateY(180deg); for Firefox browser */
 }
 
-.text
+.intro .text
 {
     z-index: 5;
+    padding-top: 50px;
 }
 
-.overlay
+.intro .overlay
 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height:100%;
-    background-color: rgba(19, 70, 236, 0.6);
+    background-color: rgba(0, 33, 255, 0.65);
     /*We have created a rectangular box called overlay with 100% height and width on the screen*/
     /* This can be used to change the colour of the video by adjusting the opacity */
     mix-blend-mode: overlay; 
@@ -155,11 +144,12 @@ button:hover
     text-align: justify;
 }
 
-.text a
+.text a 
 {
+    /* Download CV button */
     display: inline-block;
     font-size: 1.5em;
-    background-color: #fff;
+    background-color: #eee;
     padding: 10px 30px; /*Top and bottom: 10px, left & right: 30px*/
     text-decoration: none;
     font-size: 15px;
@@ -191,7 +181,6 @@ button:hover
 {
     list-style: none;
 }
-
 .social li a
 {
     display: inline-block;
@@ -200,7 +189,6 @@ button:hover
     transform: scale(0.5);
     transition: 0.5s;
 }
-
 .social li a:hover
 {
     transform: scale(0.5) translateY(-15px);
@@ -210,20 +198,28 @@ button:hover
 
 /* Skills section next to intro section */
 
+
+.blank
+{
+    background-color: #fff;
+}
 .skills
 {
     padding-left: 80px;
     padding-right: 80px;
     margin: 0;
-    background: rgb(1, 14, 54);
+    padding-top: 700px;  
+    padding-bottom: 50px;
+    /* To avoid the overlapping of the video and skills section, I added top padding by trial and error */
+    background:#eee;
 }
 .skills .heading
 {
     color: rgb(255, 249, 249);
     margin-top: 0px;
     margin-bottom: 50px;
+    padding-top: 50px;   
 }
-
 .skills .heading h2
 {
     color: rgb(151, 151, 233);
@@ -231,6 +227,8 @@ button:hover
     text-align: center;
     padding: 30px;
     font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 900;
 }
 .skills .content
 {
@@ -242,7 +240,7 @@ button:hover
 .skills .content .skillsBx
 {
     padding: 40px 20px;
-    background: rgba(8, 6, 119, 0.521);
+    background: rgba(8, 6, 119, 1);
     color: #fff;
     margin: 20px;
     max-width: 340px;
@@ -257,15 +255,15 @@ button:hover
 .skills .content .skillsBx img
 {
     max-width: px;
-    max-width: 120px;
-    max-height: 120px;
-    margin-bottom: 15px;
-    /* the image is black, to convert it to white*/   
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
 }
 .skills .content .skillsBx h2
 {
     font-size: 20px;
     font-weight: 600;
+    letter-spacing: 2px;
 }
 
 
