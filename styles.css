@@ -41,11 +41,11 @@ header
     justify-content: space-between;
     align-items: center;
     padding: 3px 15px; /* If the padding has two values, 1st one is for top and bottom, 2nd one for left and right */
+    border-bottom: 1px solid black;
 }
 .nav_links
 {
-    list-style: none;
-    
+    list-style: none;    
 }
 .nav_links li
 {
@@ -84,7 +84,6 @@ header
     color: #fff;
     z-index: 2;
 }
-
 .intro video
 {
     position: absolute;
@@ -99,13 +98,11 @@ header
     -webkit-transform:rotateY(180deg); /for Safari and Chrome browser 
     -moz-transform:rotateY(180deg); for Firefox browser */
 }
-
 .intro .text
 {
     z-index: 5;
     padding-top: 50px;
 }
-
 .intro .overlay
 {
     position: absolute;
@@ -119,21 +116,18 @@ header
     mix-blend-mode: overlay; 
     /* Change the background color ans dee..you will appreciate this mix-blend mode */
 }
-
 .text h2
 {
     font-size: 5em; /* em multiplies 5 to the actual font size of h2*/
     font-weight: 900;
     line-height: 1.1em;
 }
-
 .text h3
 {
     font-size: 3em; /* em multiplies 5 to the actual font size of h2*/
     font-weight: 400;
     line-height: 1em;
 }
-
 .text p
 {
     font-size: 1.1em;
@@ -143,7 +137,6 @@ header
     word-spacing: 5px;
     text-align: justify;
 }
-
 .text a 
 {
     /* Download CV button */
@@ -159,15 +152,14 @@ header
     text-decoration: uppercase;
     letter-spacing: 1px;
 }
-
 .text a:hover
 {
     color: rgb(0, 0, 0);
-    background-color: rgb(14, 98, 255);
+    background-color: #0033FF;
     letter-spacing: 1.1px;
 }
 
-/* Social Media Icons */
+/* S O C I A L   M E D I A    I C O N S */
 .social
 {
     position: absolute ;
@@ -196,7 +188,7 @@ header
 }
 
 
-/* Skills section next to intro section */
+/* 3. S K I L L S    S E C T I O N*/
 
 
 .blank
@@ -208,21 +200,22 @@ header
     padding-left: 80px;
     padding-right: 80px;
     margin: 0;
-    padding-top: 700px;  
+    padding-top: 750px;  
     padding-bottom: 50px;
     /* To avoid the overlapping of the video and skills section, I added top padding by trial and error */
-    background:#eee;
+    background-color: rgba(208, 222, 226, 0.6);
+    background-image: linear-gradient(to bottom,rgba(208, 222, 226, 0.6), rgba(62,173,207,1));
 }
 .skills .heading
 {
-    color: rgb(255, 249, 249);
+    color: #222;
     margin-top: 0px;
     margin-bottom: 50px;
     padding-top: 50px;   
 }
 .skills .heading h2
 {
-    color: rgb(151, 151, 233);
+    color: rgba(0, 33, 255, 1);
     text-transform: uppercase;
     text-align: center;
     padding: 30px;
@@ -240,17 +233,19 @@ header
 .skills .content .skillsBx
 {
     padding: 40px 20px;
-    background: rgba(8, 6, 119, 1);
+    background: #2a2a72;
+    background-image: linear-gradient(to bottom, #009ffd, #02005e);
     color: #fff;
     margin: 20px;
     max-width: 340px;
     text-align: center;
     transition: 0.5s;
     border-radius: 20px;
+    /* box-shadow: 50px #0000CC; */
 }
 .skills .content .skillsBx:hover
 {
-    background: #2196f3;
+    background: #02005e;
 }
 .skills .content .skillsBx img
 {
@@ -267,24 +262,30 @@ header
 }
 
 
-/* Certifications section */
+/* C E R T I F I C A T I O N S    S E C T I O N*/
 
 .certifications
 {
     padding: 35px 75px 200px 75px;
-    background: rgb(27, 25, 25);
+    background-color: rgba(208, 222, 226, 0.6);
+    background-image: linear-gradient(to top,rgba(208, 222, 226, 0.6), rgba(62,173,207,1));
 }
 .certifications .heading
 {
-    color: rgb(255, 249, 249); /* Not working */
+    color: #222;
     padding: 70px;
 }
 .certifications .heading h2
 {
+    color: rgba(0, 33, 255, 1);
+    text-transform: uppercase;
+    text-align: center;
     text-align: center;
     padding-bottom: 40px;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 900;
 }
 .certifications .content
 {
@@ -299,7 +300,7 @@ header
 .certifications .content .box
 {
     min-width: 370px;
-    border-bottom: 5px solid #03A9FF;
+    border-bottom: 5px solid rgba(0, 33, 255, 1);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 0px;
@@ -307,7 +308,8 @@ header
 .certifications .content .box h2
 {
     color: #fff;
-    background: #03A9FF;
+    letter-spacing: 2px;
+    background: rgba(0, 33, 255, 0.8);
     padding: 10px 20px;
     font-size: 20px;
     font-weight: 700;
@@ -320,6 +322,7 @@ header
 {
     position: relative;
     background: #fff;
+    color: #fff;
 }
 .certifications .content .box ul li
 {
@@ -327,9 +330,35 @@ header
     padding: 20px;
     width: 100%;
     background: #fff;
-    box-shadow: 0 5px 25px rgba(0,0,0,.15);
+    box-shadow: 0 5px 25px rgba(55, 91, 158, 0.2);
     transition: transform 0.3s;
 }
+.certifications .content .box ul li a
+{
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 20px 5px 20px;
+    border-radius: 15px;
+    color: #000;
+    background-color: #fff;
+    font-weight: 900;
+    color: rgba(0, 33, 255, 1) ;
+}
+.certifications .content .box ul li span
+{
+    width: 20px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    background: rgba(0, 33, 255, 1);
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+/* Certificates section Hover effects */
 .certifications .content .box ul:hover li
 {
     opacity: 0.4;
@@ -338,38 +367,14 @@ header
 {
     transform: scale(1.07);
     z-index: 100;
-    background: #25bcff;
+    background: #0263ff;
     box-shadow: 0 5px 25px rgba(0,0,0,.2);
     color: #fff;
     opacity: 1;
     border-radius: 5px;
 }
-.certifications .content .box ul li span
-{
-    width: 20px;
-    height:20px;
-    text-align: center;
-    line-height: 20px;
-    background: #25bcff;
-    color: #fff;
-    display: inline-block;
-    border-radius: 50%;
-    margin-right: 10px;
-    font-size: 12px;
-    font-weight: 600;
-}
 .certifications .content .box ul li:hover span
 {
     background: #ffffff;
-    color: #25bcff;
-}
-
-.certifications .content .box ul a
-{
-    text-decoration: none;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 5px 20px 5px 20px;
-    border-radius: 15px;
-    color: #000;
-    background-color: #25bcff;
+    color: rgba(0, 33, 255, 1);
 }
